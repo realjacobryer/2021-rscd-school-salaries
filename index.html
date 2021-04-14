@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>2021-2022 School Salary Calculator</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Your styles should be called here -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class='container'>
+      <h1>Comparing 2021-2022 Rochester School Salaries</h1>
+      <p class='byline'>By Jacob Schermerhorn | Updated April 13, 2021</p>
+    </div>
+    <div class='container image'>
+      <img src='img/wilson-school.jpg' />
+    </div>
+    <div class="flexbox intro">
+      <div class='container'>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis dui nec interdum rutrum. Ut pharetra, leo eu varius accumsan, nisi felis fermentum nisl, a elementum nibh sem sit amet ex. Phasellus sit amet sem ullamcorper,
+          vulputate libero vestibulum, vestibulum elit. Nulla nec odio imperdiet turpis aliquam pulvinar ut et erat. Quisque ultrices tellus at luctus ultrices. Duis magna velit, pulvinar ac imperdiet vel, suscipit vitae arcu. Cras tempor eros
+          rutrum, suscipit lorem eu, gravida neque.</p>
+        <p>Phasellus ac velit blandit, viverra purus ut, iaculis orci. Mauris ac cursus tellus. Morbi vitae congue lorem. Aliquam vulputate egestas massa, a faucibus eros porta quis. Duis eget condimentum arcu. Quisque gravida augue quis lectus
+          convallis luctus. Ut ullamcorper ligula nec ex eleifend auctor. Quisque eu mi eleifend, luctus sem eu, luctus nisl. Vivamus auctor nulla id lectus fringilla, et facilisis lacus tincidunt. Maecenas faucibus dolor erat, eget mattis lacus
+          auctora. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent aliquet eget leo ut condimentum. Proin non pulvinar massa, sit amet lobortis ipsum. Donec pulvinar dapibus interdum. Maecenas venenatis iaculis risus, in congue
+          lectus volutpat eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+        <p>Cras magna turpis, sollicitudin nec blandit sit amet, fermentum ut nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ligula risus, porta et odio sed, ultricies cursus tellus. Sed ut imperdiet
+          nisi. Phasellus nec nunc odio. Quisque sapien lorem, bibendum sed ex in, rhoncus porttitor tortor. Suspendisse non venenatis diam. Integer nisi tellus, facilisis quis viverra tincidunt, sodales eu sapien. Nam eget semper magna, in cursus
+          magna. Vestibulum maximus, tortor a ultrices euismod, turpis leo pulvinar est, id pretium mi enim nec ipsum. Pellentesque in rutrum nulla, nec cursus magna. Maecenas rutrum ornare est et mattis. Etiam eleifend, libero et scelerisque
+          malesuada, sapien enim laoreet libero, at facilisis arcu ligula fringilla eros. Maecenas iaculis pulvinar nibh, sed interdum mauris. Integer tincidunt magna eget sollicitudin dapibus. </p>
+      </div>
+      <div class="container">
+        <iframe title="Rochester Schools by Total Enrollment, 2021-2022" aria-label="Map" id="datawrapper-chart-AprK9" src="https://datawrapper.dwcdn.net/AprK9/1/" scrolling="no" frameborder="0"
+          style="width: 0; min-width: 85% !important; border: none;" height="785"></iframe>
+        <script type="text/javascript">
+          ! function() {
+            "use strict";
+            window.addEventListener("message", (function(a) {
+              if (void 0 !== a.data["datawrapper-height"])
+                for (var e in a.data["datawrapper-height"]) {
+                  var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']");
+                  t && (t.style.height = a.data["datawrapper-height"][e] + "px")
+                }
+            }))
+          }();
+        </script>
+      </div>
+    </div>
+
+
+    <div class='calc-container'>
+      <div class="container">
+        <h2>Comparing School Salaries for Rochester Schools</h2>
+        <p>Curabitur et dui non nisl vestibulum facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras varius pharetra tincidunt. Suspendisse libero urna, condimentum porttitor posuere molestie,
+          consectetur a velit. Curabitur porttitor dictum mattis.</p>
+        <div class="calculator">
+          <div class="flex">
+            <div class="row">
+              <div class='item'>
+                <h3>Teachers</h3>
+                <img class="small" src="img/wilson-teacher.jpeg" />
+                <div class="qty_container">
+                  <div>
+                    <input type="number" name='qty' value="0" />
+                  </div>
+                  <div class="unit">
+                    Teachers
+                  </div>
+                </div>
+              </div>
+              <div class="franklin" data-point="1545"><strong>Franklin</strong>: <span></span> students per 1 teacher</div>
+              <div class="wilson" data-point="447"><strong>Wilson</strong>: <span></span> students per 1 teacher</div>
+              <div class="barton" data-point="242"><strong>Barton</strong>: <span></span> students per 1 teacher</div>
+              <div class="salary" data-cost=".069"><strong>Salary Cost</strong>: $<span></span> million</div>
+            </div>
+            <div class="row">
+              <div class='item'>
+                <h3>Administrators</h3>
+                <img class="small" src="img/barton-principal.jpeg" />
+                <div class="qty_container">
+                  <div>
+                    <input type="number" name='qty' value="0" />
+                  </div>
+                  <div class="unit">
+                    Administrators
+                  </div>
+                </div>
+              </div>
+              <div class="franklin" data-point="1545"><strong>Franklin</strong>: <span></span> students per 1 administrator</div>
+              <div class="wilson" data-point="447"><strong>Wilson</strong>: <span></span> students per 1 administrator</div>
+              <div class="barton" data-point="242"><strong>Barton</strong>: <span></span> students per 1 teacher</div>
+              <div class="salary" data-cost=".112"><strong>Salary Cost</strong>: $<span></span> million</div>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="row">
+              <div class='item'>
+                <h3>Paraprofessionals</h3>
+                <img class="small" src="img/wilson-para.jpeg" />
+                <div class="qty_container">
+                  <div>
+                    <input type="number" name='qty' value="0" />
+                  </div>
+                  <div class="unit">
+                    Paraprofessionals
+                  </div>
+                </div>
+              </div>
+              <div class="franklin" data-point="1545"><strong>Franklin</strong>: <span></span> students per 1 paraprofessional</div>
+              <div class="wilson" data-point="447"><strong>Wilson</strong>: <span></span> students per 1 paraprofessional</div>
+              <div class="barton" data-point="242"><strong>Barton</strong>: <span></span> students per 1 teacher</div>
+              <div class="salary" data-cost=".025"><strong>Salary Cost</strong>: $<span></span> million</div>
+            </div>
+            <div class="row">
+              <div class='item'>
+                <h3>Other Employees</h3>
+                <img class="small" src="img/franklin-college.png" />
+                <div class="qty_container">
+                  <div>
+                    <input type="number" name='qty' value="0" />
+                  </div>
+                  <div class="unit">
+                    Other Employees
+                  </div>
+                </div>
+              </div>
+              <div class="franklin" data-point="1545"><strong>Franklin</strong>: <span></span> students per 1 other employee</div>
+              <div class="wilson" data-point="447"><strong>Wilson</strong>: <span></span> students per 1 other employee</div>
+              <div class="barton" data-point="242"><strong>Barton</strong>: <span></span> students per 1 teacher</div>
+              <div class="salary" data-cost=".048"><strong>Salary Cost</strong>: $<span></span> million</div>
+            </div>
+          </div>
+
+          <div class="row total">
+            <div class='item'>
+              <h3>Total</h3>
+            </div>
+            <div class="salary"><strong>Salary Expenditure Total</strong>: $<span></span> million</div>
+            <div class="franklin"><strong>Franklin Salary Budget Total</strong>: $14.80 million </div>
+            <div class="wilson"><strong>Wilson Salary Budget Total</strong>: $4.74 million </div>
+            <div class="barton" data-point="242"><strong>Barton Salary Budget Total</strong>: <span></span> $2.57 million</div>
+            <div class="table">
+              <table>
+                <tr>
+                  <th>School</th>
+                  <th>Teachers</th>
+                  <th>Administrators</th>
+                  <th>Paraprofessionals</th>
+                  <th>Other Employees</th>
+                </tr>
+                <tr>
+                  <td>Franklin</td>
+                  <td>160</td>
+                  <td>7</td>
+                  <td>34</td>
+                  <td>45</td>
+                </tr>
+                <tr>
+                  <td>Wilson</td>
+                  <td>48</td>
+                  <td>3</td>
+                  <td>7</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>Barton</td>
+                  <td>23</td>
+                  <td>2</td>
+                  <td>7</td>
+                  <td>12</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+  </body>
+
+</html>
